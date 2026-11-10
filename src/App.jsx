@@ -345,31 +345,6 @@ export default function App() {
             </button>
           </form>
 
-          <div className="demo-accounts">
-            <div className="demo-title">
-              <span>DEMO ACCOUNTS</span>
-              <span>For testing</span>
-            </div>
-
-            {USERS.map((item) => (
-              <button
-                key={item.username}
-                className="demo-user"
-                onClick={() => {
-                  setLoginName(item.username);
-                  setLoginPassword(item.password);
-                  setLoginError("");
-                }}
-              >
-                <span className="demo-avatar">
-                  {item.name.charAt(0)}
-                </span>
-                <span className="demo-name">{item.name}</span>
-                <span className="demo-fill">Use account <ChevronRight size={14}/></span>
-              </button>
-            ))}
-          </div>
-
           <p className="login-footer">
             TaskFlow · Plan better. Learn faster. Achieve more.
           </p>
